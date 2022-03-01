@@ -626,19 +626,21 @@ ${PROJECT_FILES}: %.gpr: \
 host=@host@
 target=@target@
 
+DESTDIR?=
+
 ifeq (${target}, ${host})
-  target_prefix=${prefix}
-  host_exe_dir=${prefix}/bin
+  target_prefix=$(DESTDIR)${prefix}
+  host_exe_dir=$(DESTDIR)${prefix}/bin
   host_cmdprefix=
-  target_exe_dir=${prefix}/bin
+  target_exe_dir=$(DESTDIR)${prefix}/bin
 
 else
-  target_prefix=${prefix}/${target}
-  host_exe_dir=${prefix}/bin
+  target_prefix=$(DESTDIR)${prefix}/${target}
+  host_exe_dir=$(DESTDIR)${prefix}/bin
   host_cmdprefix=${target}-
-  target_exe_dir=${target_prefix}/bin
+  target_exe_dir=$(DESTDIR)${target_prefix}/bin
 endif
-projects_subdir=lib/gnat/polyorb
+projects_subdir=share/gpr/polyorb
 
 .PHONY: install
 install: install-bins install-docs
@@ -666,8 +668,8 @@ install-bins:
 	ls ${top_builddir}/lib/*.a | ${PINSTALL} -m 444 - ${target_prefix}/lib/polyorb/static
 	ls ${top_builddir}/lib/*.so | ${PINSTALL} -m 555 - ${target_prefix}/lib
 	ls ${top_builddir}/lib/*.dll | ${PINSTALL} -m 555 - ${target_prefix}/lib
-	ls ${top_srcdir}/projects-distrib/*.gpr | ${PINSTALL} -m 444 - ${target_prefix}/lib/gnat
-	ls ${top_builddir}/projects-distrib/*.gpr | ${PINSTALL} -m 444 - ${target_prefix}/lib/gnat
+	ls ${top_srcdir}/projects-distrib/*.gpr | ${PINSTALL} -m 444 - ${target_prefix}/share/gpr
+	ls ${top_builddir}/projects-distrib/*.gpr | ${PINSTALL} -m 444 - ${target_prefix}/share/gpr
 	ls ${top_srcdir}/projects-distrib/polyorb/*.gpr | ${PINSTALL} -m 444 - ${target_prefix}/${projects_subdir}
 	ls ${top_builddir}/projects-distrib/polyorb/*.gpr | ${PINSTALL} -m 444 - ${target_prefix}/${projects_subdir}
 	(find \

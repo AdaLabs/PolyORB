@@ -42,14 +42,14 @@ abstract project PolyORB_Install_Common is
      external ("LIBRARY_TYPE", "@LIBRARY_TYPE@");
 
 
-   Library_Dir := "../..";
+   Library_Dir := "../../../lib";
 
    case Library_Type is
       when "relocatable" =>
-         Library_Dir := "../..";
+         Library_Dir := "../../../lib";
 
       when "static" =>
-         Library_Dir := "../../polyorb/static";
+         Library_Dir := "../../../lib/polyorb/static";
    end case;
 
 end PolyORB_Install_Common;
