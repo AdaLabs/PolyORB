@@ -1,5 +1,17 @@
 #!/bin/bash
 RM="rm -rf"
+find . -name *.o -exec rm {} \;
+find . -name *.ali -exec rm {} \;
+find . -name *.stderr -exec rm {} \;
+$RM compilers/iac/backend-be_corba_ada-nodes.idl-stamp
+$RM compilers/iac/frontend-nodes.idl-stamp
+$RM autom4te.cache
+$RM compilers/gnatprfh/gnatprfh
+$RM compilers/iac/iac
+$RM compilers/iac/backend-be_corba_ada-nodes.adb
+$RM compilers/iac/backend-be_corba_ada-nodes.ads
+$RM compilers/iac/frontend-nodes.adb
+$RM compilers/iac/frontend-nodes.ads
 $RM compilers/iac/mknodes
 $RM config.excluded_source_files
 $RM config.local.makefiles
