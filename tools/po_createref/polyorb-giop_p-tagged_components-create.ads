@@ -26,7 +26,6 @@
 --                                                                          --
 ------------------------------------------------------------------------------
 
-with PolyORB.GIOP_P.Tagged_Components;
 with PO_CreateRef_Parse_Cmd; use PO_CreateRef_Parse_Cmd;
 
 package PolyORB.GIOP_P.Tagged_Components.Create is

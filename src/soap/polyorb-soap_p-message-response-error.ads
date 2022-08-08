@@ -33,7 +33,6 @@
 pragma Ada_2012;
 
 with PolyORB.SOAP_P.Message.Payload;
-with PolyORB.SOAP_P.Message.Response;
 
 package PolyORB.SOAP_P.Message.Response.Error is
 

@@ -27,7 +27,6 @@
 ------------------------------------------------------------------------------
 
 with PO_CreateRef_Parse_Cmd; use PO_CreateRef_Parse_Cmd;
-with PolyORB.GIOP_P.Tagged_Components.Policies;
 
 package PolyORB.GIOP_P.Tagged_Components.Policies.Create is
 

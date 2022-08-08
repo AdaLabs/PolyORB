@@ -26,7 +26,6 @@
 --                                                                          --
 ------------------------------------------------------------------------------
 
-with PolyORB.Binding_Data;
 with PO_CreateRef_Parse_Cmd; use PO_CreateRef_Parse_Cmd;
 
 package PolyORB.Binding_Data.Create is

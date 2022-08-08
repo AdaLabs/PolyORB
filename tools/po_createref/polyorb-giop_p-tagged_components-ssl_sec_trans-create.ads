@@ -27,7 +27,6 @@
 ------------------------------------------------------------------------------
 
 with PO_CreateRef_Parse_Cmd; use PO_CreateRef_Parse_Cmd;
-with PolyORB.GIOP_P.Tagged_Components.SSL_Sec_Trans;
 
 package PolyORB.GIOP_P.Tagged_Components.SSL_Sec_Trans.Create is
 

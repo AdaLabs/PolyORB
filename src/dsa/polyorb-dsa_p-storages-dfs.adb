@@ -420,7 +420,6 @@ package body PolyORB.DSA_P.Storages.DFS is
 
    overriding procedure Lock (Self : access DFS_Manager_Type) is
       Success : Boolean;
-      pragma Unreferenced (Success);
 
    begin
       Enter (Self.PO_Mutex);

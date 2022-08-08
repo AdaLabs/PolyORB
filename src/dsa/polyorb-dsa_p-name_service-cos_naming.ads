@@ -36,7 +36,6 @@ pragma Ada_2012;
 --  concept of a centralized name server.
 
 with PolyORB.References;
-with PolyORB.DSA_P.Name_Service;
 with PolyORB.Services.Naming;
 package PolyORB.DSA_P.Name_Service.COS_Naming is
 

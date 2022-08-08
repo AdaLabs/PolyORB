@@ -35,7 +35,6 @@ with PolyORB.Buffers;
 with PolyORB.Initialization;
 with PolyORB.Log;
 with PolyORB.QoS.Service_Contexts;
-with PolyORB.QoS;
 with PolyORB.References.IOR;
 with PolyORB.Representations.CDR.Common;
 with PolyORB.Request_QoS;

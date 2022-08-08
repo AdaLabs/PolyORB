@@ -35,7 +35,6 @@ with PolyORB.Initialization;
 with PolyORB.Errors;
 with PolyORB.Obj_Adapters;
 with PolyORB.ORB;
-with PolyORB.Setup;
 with PolyORB.POA.Basic_POA;
 with PolyORB.POA_Manager;
 

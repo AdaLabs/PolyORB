@@ -2318,7 +2318,6 @@ package body Backend.BE_CORBA_Ada.Skels is
                Fn : Temp_File_Name;
 
                Dummy : Boolean;
-               pragma Unreferenced (Dummy);
             begin
                Create_Temp_File (Fd, Fn);
                Close (Fd);

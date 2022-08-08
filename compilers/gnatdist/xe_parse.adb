@@ -264,7 +264,6 @@ package body XE_Parse is
       Parameter_Sloc  : XE_Scan.Location_Type)
    is
       Ignore : Parameter_Id;
-      pragma Unreferenced (Ignore);
    begin
       Declare_Subprogram_Parameter
         (Parameter_Name, Para_Type_Node, Subprogram_Node, Parameter_Sloc,
@@ -345,7 +344,6 @@ package body XE_Parse is
       Attribute_Sloc     : Location_Type)
    is
       Ignore : Attribute_Id;
-      pragma Unreferenced (Ignore);
    begin
       Declare_Type_Attribute
         (Type_Node, Attribute_Name, Attr_Type_Node, Attribute_Kind,
@@ -385,7 +383,6 @@ package body XE_Parse is
       Component_Sloc     : Location_Type)
    is
       Ignore : Component_Id;
-      pragma Unreferenced (Ignore);
    begin
       Declare_Type_Component
         (Type_Node, Component_Name, Comp_Type_Node, Component_Sloc,

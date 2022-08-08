@@ -270,7 +270,6 @@ package body PolyORB.Utils.Sockets is
         (PolyORB.Sockets.Socket_Type, File_Descriptor);
 
       Dummy : Boolean;
-      pragma Unreferenced (Dummy);
 
    begin
       Set_Close_On_Exec

@@ -31,7 +31,6 @@
 ------------------------------------------------------------------------------
 
 with PolyORB.Errors;
-with PolyORB.Minimal_Servant;
 with PolyORB.References;
 with PolyORB.Types;
 with PolyORB.Obj_Adapters;

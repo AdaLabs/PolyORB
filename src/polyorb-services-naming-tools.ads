@@ -34,7 +34,6 @@
 
 with PolyORB.References;
 
-with PolyORB.Services.Naming;
 with PolyORB.Services.Naming.NamingContext;
 
 package PolyORB.Services.Naming.Tools is

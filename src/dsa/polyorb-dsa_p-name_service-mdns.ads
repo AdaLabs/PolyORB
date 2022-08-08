@@ -34,7 +34,6 @@
 
 pragma Ada_2012;
 
-with PolyORB.DSA_P.Name_Service;
 with PolyORB.POA_Policies;
 with PolyORB.References;
 

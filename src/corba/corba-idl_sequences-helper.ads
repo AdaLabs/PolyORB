@@ -37,9 +37,6 @@
 
 with PolyORB.Any;
 
-with CORBA;
-pragma Elaborate_All (CORBA);
-
 package CORBA.IDL_SEQUENCES.Helper is
 
    --  AnySeq sequence

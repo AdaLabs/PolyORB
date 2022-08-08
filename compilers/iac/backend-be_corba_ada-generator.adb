@@ -30,7 +30,6 @@ with Ada.Characters.Handling; use Ada.Characters.Handling;
 
 with GNAT.OS_Lib; use GNAT.OS_Lib;
 
-with Backend.BE_CORBA_Ada;         use Backend.BE_CORBA_Ada;
 with Backend.BE_CORBA_Ada.Nodes;   use Backend.BE_CORBA_Ada.Nodes;
 with Backend.BE_CORBA_Ada.Nutils;  use Backend.BE_CORBA_Ada.Nutils;
 with Backend.BE_CORBA_Ada.Runtime; use Backend.BE_CORBA_Ada.Runtime;

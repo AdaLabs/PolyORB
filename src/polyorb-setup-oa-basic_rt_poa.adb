@@ -41,7 +41,6 @@ with PolyORB.POA_Config.Root_POA;
 
 with PolyORB.POA_Manager;
 with PolyORB.RT_POA.Basic_RT_POA;
-with PolyORB.Setup;
 with PolyORB.Setup.Proxies_POA;
 --  XXX should be depended upon only when proxies are desired.
 

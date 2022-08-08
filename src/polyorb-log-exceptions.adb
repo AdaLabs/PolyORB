@@ -35,7 +35,6 @@ with Ada.Exceptions;
 with GNAT.Exception_Actions;
 
 with PolyORB.Initialization;
-with PolyORB.Log;
 with PolyORB.Utils.Strings;
 
 package body PolyORB.Log.Exceptions is

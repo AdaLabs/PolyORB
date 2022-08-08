@@ -961,7 +961,6 @@ package body PolyORB.Protocols.GIOP is
       Success : out Boolean)
    is
       Ignored_Req : Pending_Request;
-      pragma Unreferenced (Ignored_Req);
    begin
       pragma Debug (C, O ("Retrieving pending request with id"
                        & Types.Unsigned_Long'Image (Id)));
@@ -986,7 +985,6 @@ package body PolyORB.Protocols.GIOP is
       Success :    out Boolean)
    is
       Ignored_Req : Pending_Request_Access;
-      pragma Unreferenced (Ignored_Req);
    begin
       pragma Debug (C, O ("Removing pending request with locate id"
                        & Types.Unsigned_Long'Image (Id)));

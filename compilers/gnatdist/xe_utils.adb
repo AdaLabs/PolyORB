@@ -402,7 +402,6 @@ package body XE_Utils is
       Has_Prj  : out Boolean)
    is
       Is_Section : Boolean;
-      pragma Unreferenced (Is_Section);
 
       Prog : Make_Program_Type := None;
 

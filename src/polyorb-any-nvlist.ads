@@ -32,7 +32,6 @@
 
 pragma Ada_2012;
 
-with PolyORB.Any;
 with PolyORB.Smart_Pointers;
 with PolyORB.Types;
 with PolyORB.Utils.Chained_Lists;

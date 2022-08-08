@@ -40,9 +40,6 @@ with XE_Names;    use XE_Names;
 with XE_Utils;    use XE_Utils;
 with XE_Storages; use XE_Storages;
 
-with XE_Back;
-pragma Elaborate_All (XE_Back);
-
 package body XE_Back.GARLIC is
 
    type GARLIC_Backend is new Backend with null record;

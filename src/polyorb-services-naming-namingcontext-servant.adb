@@ -51,7 +51,6 @@ with PolyORB.Utils.Strings;
 
 with PolyORB.Minimal_Servant.Tools;
 
-with PolyORB.Services.Naming;
 with PolyORB.Services.Naming.Helper;
 with PolyORB.Services.Naming.NamingContext.Client;
 with PolyORB.Services.Naming.NamingContext.Helper;
